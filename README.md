@@ -11,6 +11,29 @@ A real-time ride dispatch simulator built for a software engineering internship 
 - Load testing that reports throughput and p95 dispatch latency.
 - Browser dashboard that visualizes drivers, riders, active trips, and surge pressure.
 
+## Tech stack
+
+- JavaScript / Node.js
+- Native HTTP server
+- Native WebSocket protocol implementation
+- HTML5 Canvas
+- CSS Grid and responsive UI
+- GitHub / Git
+
+## Benchmark
+
+Measured locally with `DRIVERS=10000 REQUESTS=10000 npm run load`.
+
+| Metric | Result |
+| --- | ---: |
+| Simulated drivers | 10,000 |
+| Simulated ride requests | 10,000 |
+| Matched requests | 9,983 |
+| Match rate | 99.83% |
+| Throughput | 770 requests/sec |
+| p95 dispatch latency | 0.12 ms |
+| Average ETA | 1 min |
+
 ## Run locally
 
 ```bash
