@@ -1,0 +1,23 @@
+{
+  "name": "ride-dispatch-simulator",
+  "version": "1.0.0",
+  "description": "Real-time ride dispatch simulator with geospatial matching, surge pricing, and WebSocket telemetry.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node src/simulator.test.js",
+    "load": "node src/loadtest.js"
+  },
+  "keywords": [
+    "dispatch",
+    "geospatial",
+    "websocket",
+    "rideshare",
+    "systems"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}

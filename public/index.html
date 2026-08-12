@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ride Dispatch Simulator</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Real-time systems portfolio project</p>
+        <h1>Ride Dispatch Simulator</h1>
+      </div>
+      <button id="requestRide" type="button">Request Ride</button>
+    </header>
+
+    <main class="layout">
+      <section class="map-shell" aria-label="Live dispatch map">
+        <canvas id="map" width="1120" height="720"></canvas>
+        <div class="legend">
+          <span><i class="driver"></i>Drivers</span>
+          <span><i class="rider"></i>Riders</span>
+          <span><i class="trip"></i>Trips</span>
+          <span><i class="surge"></i>Surge</span>
+        </div>
+      </section>
+
+      <aside class="panel">
+        <section class="metrics">
+          <div>
+            <span>Active trips</span>
+            <strong id="activeTrips">0</strong>
+          </div>
+          <div>
+            <span>Available drivers</span>
+            <strong id="availableDrivers">0</strong>
+          </div>
+          <div>
+            <span>Waiting riders</span>
+            <strong id="waitingRiders">0</strong>
+          </div>
+          <div>
+            <span>Avg ETA</span>
+            <strong id="averageEta">0m</strong>
+          </div>
+          <div>
+            <span>p95 dispatch</span>
+            <strong id="p95Dispatch">0ms</strong>
+          </div>
+          <div>
+            <span>Supply / demand</span>
+            <strong id="ratio">0</strong>
+          </div>
+        </section>
+
+        <section class="feed">
+          <h2>Dispatch Decisions</h2>
+          <ol id="feed"></ol>
+        </section>
+      </aside>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
