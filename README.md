@@ -1,8 +1,8 @@
 # Ride Dispatch Simulator
 
-A real-time ride dispatch simulator built for a software engineering internship portfolio. It models driver supply, rider demand, ETA-based matching, surge pricing, live trip state, and dispatch latency.
+A real-time ride dispatch simulator. It models driver supply, rider demand, ETA-based matching, surge pricing, live trip state, and dispatch latency.
 
-## Why this project fits an Uber SWE application
+## Features
 
 - Geospatial matching with Haversine distance and ETA scoring.
 - Real-time state propagation over WebSockets.
@@ -74,10 +74,6 @@ flowchart LR
   Sim --> Match
   Sim --> Surge
 ```
-
-## Resume bullet
-
-Built a real-time ride dispatch simulator with WebSocket telemetry, geospatial ETA-based matching, dynamic surge pricing, and load tests simulating thousands of drivers and ride requests while tracking p95 dispatch latency.
 
 ## Future improvements
 
